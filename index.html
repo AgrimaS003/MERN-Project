@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Bike Zoom</title>
+  <meta name="title" content="Bike Zoom">
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Mulish&display=swap"
+    rel="stylesheet">
+  <!-- 
+    - material icon font
+  -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,600,0,0" />
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+</head>
+<body>
+  <!-- 
+    - #HEADER
+  -->
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="128" height="63" alt="autofix home">
+      </a>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link">About</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="nav-toggle-icon icon-1"></span>
+        <span class="nav-toggle-icon icon-2"></span>
+        <span class="nav-toggle-icon icon-3"></span>
+      </button>
+    </div>
+  </header>
+  <main>
+    <article>
+      <!-- 
+        - #HERO
+      -->
+      <section class="hero has-bg-image" aria-label="home" style="background-image: url('./assets/images/hero-bg.jpg')" width="100%" height="1000px"></section>
+      <!-- 
+        - #SERVICE
+      -->
+      <section class="section service has-bg-image" aria-labelledby="service-label"
+        style="background-image: url('./assets/images/service-bg.jpg')">
+        <div class="container">
+          <p class="section-subtitle :light" id="service-label">Our Promise</p>
+          <h2 class="h2 section-title">Our promise to our customer</h2>
+          <ul class="service-list">
+            <li>              
+              <div class="service-card">
+                <figure class="card-icon">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEVgfYv///9aeYdQcoGerrZVdYT2+Pjv8fNOcIDg5edceohYd4aRo6ysucBSc4Pl6evN1dlkgI6Mn6nEzdK3wsh4kJvI0NWdrbXU295wiZWltLuBl6FxipZphJGwvMOBlqHYZMN5AAALS0lEQVR4nOWdbZuqIBCGMcMMXMy3Mqvd//8vj1Zb4CvKQ9HZ59ues5fLLTjAMMwQz7qCuMzy6pD+FOdLkhCSXI7FKT1UeVbGgf0/T2w+PN59R2fqC8o5Z4yRp+qf6n+jwqfn6Hu3sdkIW4SbfVVQn3KFq081av17RbW3hWmDcJNFpIGbYFM4a0wSZTYo4YTlOvFnwcmYfrIu0Q3CEu5TIfgiul9xIdI9tE1Awl0q6LLOa3UlFekO1ywU4fZAIXi/kPSwBbUMQ5gd/RUM76aVf8wgbQMQbipk9z1Vd2QFMK7GhHEUmtmWMfEwit9MuD2FNrrvKeafDD9II8LYNt+VMTwZ9aMB4Sb17fPdGFOD73E54fpFfDfG9csJc2rPvvSJ0/ylhNsLfSlfI3pZZnIWER5eYGC6YuHhRYQle+0AfYqzBTuP+YRR+Ca+RmFknfB9HXjT/G6cSVi9swNvCiuLhMH59Sa0K3qe5aGbQ1iKd5jQrhidM1JnEH69f4T+KvyyQXgS7+aSJE5wwuDyXhvaFr/ofoyahPFCB6E9Ma65p9IjLN35BJ8K9eyNFmHmImCNqOWq0iHM3QSsEXV2VBqEDs0SbenMGtOElUuzRFtiegk3Seg0oA7iFOGX24A14tRAnSB01sg8NWVuxgkdnSZUTUwao4ROTvRdjU/9Y4TxZwDWiGMLuBHCwK219pj4yDJ8hPDi2mJ7WOyyhPD0OV1Yd2I6n9D5iVAVHZwWhwg/xIw+NWhQBwiDz+rBRnTA2gwQnj/HyvyKnecQVi74ReeK9i/Cewk/7iO8qf9T7CX8vCF6E9MljD5pJpTF+06megg/dIw26hunPYSfOkYb9YzTLuHhU8doI949CO8Qbq2OUcbYZFy0kcJOOEOH0NqOglERJsUpPRWJjwlE7f0rnV1GmzC3M9czyqPsuU+Ns8PKEmQn7qZFGFgB5H7UNXJlBI9JvYqOE64tmBnmV/2L4qCycajMWwFiKuHGx//FMBp2MQQ2Qld8NcxPJUzh75Tx8TOwEn8wydT9vkIYw7uQF1NHtUEB/zB8xfWmEJ7Q75PqhDBFaOvGfoYI4ZM91Qu1O6ARlWlfJkR3Ye9Sv7cXwQOVyZEaEiHaxc0KTUDPK8DvVnaCS4QRugu7Ribe53m+6/rgA/Dcz6TR8yTcgLuws1cr0+ZCIufUF2nn/9B//DknPgkr7Mewan2Eu0RaiDJxad3dirC9yJ9eqSch2KD56hj9aTtgW3FbAXgqfq5OH4QZlnCleNk3rNtFK6Ksrr6wnUizDuERa2eULtz07pQYlRED7JfIjm3CLXaUrOS5PhjY1jMmv4YDthMfSzdi6fnyquJnaHgoM/MWe1TyeMe/hOiFk9T0/XDThWxRwS2gKuEObGcOui23N0zpTiEEbwypdB179OVRqRP32Lf8u028E4KPC+Vt9ujLk3eraAeDkAnBr+/34VeNt1v+TfBrvg8kYmOQEslpuR1/eUIyuhdsI+7jg9h4e/Ime2KtRKWQrcFZZaHEk7BEE0pfVz6+oOeSAxc9kkT5IER7SeXt2cR6c/X9/FX4BnX9IEywT55F+GWPkCS/hHA/sCuE10mrIczQHktXCHl2J4Q/2RXCazsaQvBz3SG8LnuJjeMYZwibD5Hgl2wOETYLNwJ3shGHCBuXG8E7nB0ibNzuBL8o5dSXVm1VSMck38xOZyZ50xBtCLGHhjwsvval5LffbMcl7STjcv9VYDMW+XFNiHRgUJKb5noMcoJs0K4m/Ia9NCaWZlhRleMCGPh3TQj7vvkFlfZwA7tWXds8Agt4Xv1MN11bPyC/GzvXhKBRP+M8VEeoKYx6BHboAwWELZb9gMSY6bAbE2goUNiEiEkJGaVsfmacKWEsIC0JZvsb4rPHYk7deUYmfGF6YsMXq5YL4nrjOYHsLKhyKv998YU/X8K/fMuPgSy2eEUOiDcln/gGyfKW0UR+EMLKswOBjAU59NhoJlNmVYSTk6UE4UqXP0ND/7mQIm0QL5+dSGH+lHooPJtlGFMh74ghH1BBzoCnyEe+a0NCKYYZcih8JogjLblZQELDR910IYjP2WXC5A8QIjSjWVOXguCEGOk2i4kkjdJkzElhgfCFo9RPbz64OBperVgYpa+zpVIA1G5wWWDBlh4BT9FqlhIzPLi/hRMeIWsanWZx9S7518CWBk5YQNalOs3yPVUDGxA0Yb0uRSxvNZrV2SMPOCnghClkf6jRLN52hw/4FuCEB8geX6NZtJ2uamAHjyas9/gIP82SPhyIBoMT5hBfm0azVu1LXgNjB06YQfylOs1q5wIYWEuhCWkJ8XnrNIuqVZyGHGloQhFDzi20mrVSzk6HLDia0A8gZ09azVJyAQzeX4GPUsz5oV6zpODv4QsyYMLr+SHgBERzbyERDn4aaMIIc47vLuH1HB9wPOAu4TUWAxC45y5h/e0TxJUndwkpKK7NWcJ7XJv57mL+bPEiP809NtE8vlSvWVLdjeG7hljCe3ypuanRa5a0zR+eg7GE9xhh89AVzWY93Ikjt+/BlsYDxerrNkvcNvrZyKCBEj5i9Y03wdrNokmVV6Pn/FDCx30L4w9xRrM4H3+dUMLHnRnjkABXT9ce956M7645SijdXTO9f+gooXT/0DRc31VC70lo6NqXXYWGa0D5AMcwFkO5B2y4cJMPJYaPBrUkZ1kwfO/KXW7TYSo7mYySZyruKsPDW+U+vunrko/ONgZVZrmS0MVsmm7lVDB0ZSjl+oJILJWSYtHQG9/Ki2G40W8HQW+WSX2I4XK5ldvE1G4J08tAXRmm9u/kpzHMf8NnFgfVkOG008kxZJonCh7KbhjI3s0TZZrr6/lEkAzfeE+uL1On4gobrp8arth68rUZu9y0cpXqyjSnaW/OPeMbHFS/+umUjKv49OZNNHfXMLbrae187YzTtvfnvkRcCBaFOePubH7u7vfnL0Xk+LnmXt9ugmXabLOIA3K1K4mE8XmEm9vqSy4FNdeCQLfVB/MIwxM1vUlKskLb+bzfonA4n7eFnOxv0FhOdit59V+u0bz6VmojvFjjtRHwWT5fr4n6FrZqlLxOUzVKPqpyZZ+m68xYrhVkXRq1gv7/ek9/oGbXH6i79v/Xzvvccapd//BTx2l/fpU/Wof0D9SS/QP1gD/vU5xb0/kP1OX+A7XVP2qX0d1RaBEGn9OJPaWldAjhRbysKezWyNIj/BSDOmhGpwm97BMQw/YF3DmEXu4+YjiRUnQq3aHz06IYnAg1Cb3KbUQxGQQynbLSacRpQA1C78vdbzGcGqJ6hO6amykjo03o6qQxMU3MIXRz6h+f6GcSejG+9LKhGB9bqs0n9AJYAmqM+EU3GlI/wXHqkneK6seYzUjh7NCsoTNLLCD0SkCoC0KM6tmY+YRecHZhpNLzrIDkmYnGq/eP1HBmOPLcVOole69N5WxuavT5yeKjd3ZjOD+IdUE6/Pd1I2dzTMxyQs87hO8wqizsHmHbIvS2l9cbVXpZVpxgadGG3OB20xLxTpyMbULPW/uvG6rMX083CE7obdIXMbIwNbivYlRaJP55gclh4Ulzn2SBsDY5J8uMzP8xrH5iXB4mjrBVthTxMDLqPwhh/T1W1Mqmg1FaAe6LYUr8ZEcfnXt75R+1HE2TQhUx2h6QHVl338F4eN4FLNO0SwUEklGRYq4XXYUtRLVPhTDMOCBEup/+QzOELrXllevEX+h6ZNxP1gt2D+OCE9baZBGZecGnuUpEogxfNcoOYaPNvipogznFyRo4WlR7G3SNbBFeFe++ozP1BeWcq2Uf6p/qf6PCp+foe2cL7iqrhDcFcZnl1SE9FedLkhCSXI7FKT1UeVbG+Gv8Hf0DI/ec9HvAVhQAAAAASUVORK5CYII=" width="110" height="110" loading="lazy" alt="Privacy">
+                </figure>
+                <h3 class="h3 card-title">Privacy</h3>
+                <p class="card-text">
+                  Personal information and car records are kept strictly confidential.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+                <figure class="card-icon">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwxDeRimBu3fXUzV5D6IOjiXte2uuRXNe4kw&usqp=CAU" width="110" height="110" loading="lazy" alt="Support">
+                </figure>
+                <h3 class="h3 card-title">Support</h3>
+                <p class="card-text">
+                  Dedicated team available to assist you with any motorbike-related queries.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+                <figure class="card-icon">
+                  <img src="https://t4.ftcdn.net/jpg/05/04/12/87/360_F_504128706_0Ib190QqL8VplFqZNRpefKO7xRiQTTAp.jpg" width="110" height="110" loading="lazy" alt="Fair Price">
+                </figure>
+                <h3 class="h3 card-title">Fair Price</h3>
+                <p class="card-text">
+                  Enjoy transparent pricing and value-for-money services.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 
+        - #ABOUT
+      -->
+      <!--<section class="section about has-before" aria-labelledby="about-label"
+      style="background-image: url('./assets/images/service-bg.jpg')">-->
+        <div class="container">
+          <div class="about-content" width="540" height="540">
+            <p class="section-subtitle :light">About Us</p>
+            <h2 class="h2 section-title">Welcome to our bike showroom, where passion meets performance.</h2>
+            <p class="section-text">
+              Discover a curated collection of top-tier motorcycles, designed to elevate your riding experience and ignite your love for the open road.
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <!-- 
+    - #FOOTER
+  -->
+  <footer class="footer">
+    <div class="footer-top section">
+      <div class="container">
+        <ul class="footer-list">
+          <li>
+            <p class="h3">Contact Info</p>
+          </li>
+          <li>
+            <a href="tel:01234567890" class="footer-link">
+              <span class="material-symbols-rounded">call</span>
+              <span class="span">01234567890</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:info@bikezoom.com" class="footer-link">
+              <span class="material-symbols-rounded">mail</span>
+              <span class="span">info@bikezoom.com</span>
+            </a>
+          </li>
+          <li>
+            <address class="footer-link address">
+              <span class="material-symbols-rounded">location_on</span>
+              <span class="span">Gandhinagar, Gujarat- 382421</span>
+            </address>
+          </li>
+        </ul>
+      </div>
+      <img src="./assets/images/footer-shape-3.png" width="637" height="173" loading="lazy" alt="Shape"
+        class="shape shape-3 move-anim">
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <img src="./assets/images/footer-shape-2.png" width="778" height="335" loading="lazy" alt="Shape"
+          class="shape shape-2">
+        <img src="./assets/images/footer-shape-1.png" width="200" height="250" loading="lazy" alt="Red Bike"
+          class="shape shape-1 move-anim">
+      </div>
+    </div>
+  </footer>
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
